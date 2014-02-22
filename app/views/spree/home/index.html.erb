@@ -1,18 +1,25 @@
+<% content_for :sidebar do %>
+  <div data-hook="homepage_sidebar_navigation">
+    <%= render :partial => 'spree/shared/taxonomies' %>
+  </div>
+<% end %>
+
+
 <% content_for :subheader do %>
   <%= render 'slider' %>
 <% end %>
 
 <div id="welcome-message">
-  <div class="container">
+  <div class="column12 omega">
     <h1>
-      Welcome to our amazing store!
+      Welcome to Brew Wizard
       <br>
-      Choose <a href="/products">anything</a> you wish, we’ll ship it <a href="/products">anywhere!</a>
+      Choose <a href="/products">anything</a> you wish, we’ll ship it <a href="/products">anywhere in Australia!</a>
     </h1>
   </div>
 </div>
 
-<div class="container">
+<div class="column12 omega">
   <% if @featured_products %>
     <div id="featured-products" class="row">
       <h3>Featured Products</h3>
